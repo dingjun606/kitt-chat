@@ -27,7 +27,7 @@ const DEFAULT_USER_CHOICES = {
   audioEnabled: true,
   videoDeviceId: '',
   audioDeviceId: '',
-  language: 'en-US',
+  language: 'zh-CN',
 };
 
 const ParticipantPlaceholder = (props: React.SVGProps<SVGSVGElement>) => (
