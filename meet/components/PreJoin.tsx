@@ -354,6 +354,7 @@ export const PreJoin = ({
             setLang(e.target.value);
           }}
         >
+          <option value="zh-CN">中文</option>
           <option value="en-US">English (United States)</option>
           <option value="fr-FR">French (France)</option>
           <option value="de-DE">German (Germany)</option>
