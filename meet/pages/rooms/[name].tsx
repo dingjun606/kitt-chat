@@ -19,11 +19,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>LiveKit Meet</title>
+        <title>心理咨询中心</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main data-lk-theme="default">
+        <div style={{ backgroundColor: 'blue', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <img src="/logo.png" style={{ height: '50px' }} />
+        </div>
         {roomName && !Array.isArray(roomName) && preJoinChoices ? (
           <ActiveRoom
             roomName={roomName}
