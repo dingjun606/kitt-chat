@@ -24,7 +24,7 @@ import { GPTTile } from './GPTTile';
 import { Transcriber } from './Transcriber';
 import { ErrorMessage } from './ErrorMessage';
 
-const BotIdentity = 'KITT';
+const BotIdentity = '咨询师';
 
 export interface VideoConferenceProps extends React.HTMLAttributes<HTMLDivElement> {
   chatMessageFormatter?: MessageFormatter;
