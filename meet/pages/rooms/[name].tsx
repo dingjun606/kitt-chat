@@ -9,7 +9,7 @@ import { useServerUrl } from '../../lib/client-utils';
 import { VideoConference } from '../../components/VideoConference';
 import { LocalUserChoices, PreJoin } from '../../components/PreJoin';
 
-const nameReg = new RegExp('^[a-zA-Z0-9_-]{1,64}$');
+const nameReg = new RegExp('^[\w\u4e00-\u9fa5-]{1,64}$');
 
 const Home: NextPage = () => {
   const router = useRouter();
