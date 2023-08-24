@@ -19,14 +19,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>心理咨询中心</title>
+        <title>心语</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main data-lk-theme="default">
-        <div style={{ backgroundColor: '#D2C8F', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {/* <div style={{ backgroundColor: '#D2C8F', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img src="/logo.png" style={{ height: '50px' }} />
-        </div>
+        </div> */}
         {roomName && !Array.isArray(roomName) && preJoinChoices ? (
           <ActiveRoom
             roomName={roomName}
