@@ -10,6 +10,8 @@ import { VideoConference } from '../../components/VideoConference';
 import { LocalUserChoices, PreJoin } from '../../components/PreJoin';
 
 const nameReg = new RegExp('^[a-zA-Z0-9_-]{1,64}$');
+// const nameReg = new RegExp('^[a-zA-Z0-9_-一-龥\u3400-\u4DBF\u20000-\u2A6DF]{1,64}$');
+
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -19,7 +21,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>心语</title>
+        <title>来自《流浪地球》时空的MOSS</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -40,7 +42,8 @@ const Home: NextPage = () => {
             <PreJoin
               onError={(err) => console.log('error while setting up prejoin', err)}
               onValidate={(values) => {
-                return nameReg.test(values.username);
+                // return nameReg.test(values.username);
+                return values.username != '';
               }}
               defaults={{
                 username: '',

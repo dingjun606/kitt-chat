@@ -479,7 +479,7 @@ func (p *GPTParticipant) answer(events []*MeetingEvent, prompt *SpeechEvent, rp 
 				break
 			}
 
-			_ = p.sendErrorPacket("Sorry, an error occured while communicating with OpenAI. It can happen when the servers are overloaded")
+			_ = p.sendErrorPacket("Sorry, an error occured while communicating with AI. It can happen when the servers are overloaded")
 			return "", err
 		}
 

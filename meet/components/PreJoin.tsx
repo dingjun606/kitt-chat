@@ -201,10 +201,10 @@ export const PreJoin = ({
   onSubmit,
   onError,
   debug,
-  joinLabel = 'Join Room',
-  micLabel = 'Microphone',
-  camLabel = 'Camera',
-  userLabel = 'Username',
+  joinLabel = '智能对话',
+  micLabel = '麦克风',
+  camLabel = '相机',
+  userLabel = '你的昵称',
   ...htmlProps
 }: PreJoinProps) => {
   const [userChoices, setUserChoices] = React.useState(DEFAULT_USER_CHOICES);
@@ -242,6 +242,7 @@ export const PreJoin = ({
 
   const handleValidation = React.useCallback(
     (values: LocalUserChoices) => {
+      log.debug("判断用户名:"+values.username)
       if (typeof onValidate === 'function') {
         return onValidate(values);
       } else {

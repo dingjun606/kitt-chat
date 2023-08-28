@@ -24,7 +24,7 @@ import { GPTTile } from './GPTTile';
 import { Transcriber } from './Transcriber';
 import { ErrorMessage } from './ErrorMessage';
 
-const BotIdentity = 'KITT';
+const BotIdentity = '来自《流浪地球》时空的MOSS';
 
 export interface VideoConferenceProps extends React.HTMLAttributes<HTMLDivElement> {
   chatMessageFormatter?: MessageFormatter;
